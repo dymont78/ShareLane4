@@ -65,7 +65,7 @@ public class ShareLaneTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.sharelane.com/cgi-bin/register.py?page=1&zip_code=12345");
         driver.findElement(By.xpath("//*[@value='Register']")).click();
-        //driver.quit();
+        driver.quit();
     }
 }
 

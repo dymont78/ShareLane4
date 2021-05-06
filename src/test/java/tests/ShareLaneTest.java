@@ -57,7 +57,7 @@ public class ShareLaneTest {
         driver.findElement(By.name("email")).sendKeys("abc@defg.hi");
         driver.findElement(By.name("password1")).sendKeys("11223344");
         driver.findElement(By.name("password2")).sendKeys("11223344");
-        //driver.quit();
+        driver.quit();
     }
     @Test
     public void clickRegister() {
@@ -65,7 +65,7 @@ public class ShareLaneTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.sharelane.com/cgi-bin/register.py?page=1&zip_code=12345");
         driver.findElement(By.xpath("//*[@value='Register']")).click();
-        //driver.quit();
+        driver.quit();
     }
 }
 
